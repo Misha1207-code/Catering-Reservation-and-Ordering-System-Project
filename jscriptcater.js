@@ -1,10 +1,10 @@
-// Import Firebase modules
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-auth.js";
 import { getFirestore, collection, addDoc, getDocs, onSnapshot, doc, updateDoc, query, where } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-firestore.js";
 
-// Firebase Configuration
+
 const firebaseConfig = {
     apiKey: "AIzaSyAVFvmsPSIuFPQS5XNIk05kM0ebwoMnbP0",
     authDomain: "catering-project-23856.firebaseapp.com",
@@ -15,7 +15,7 @@ const firebaseConfig = {
     measurementId: "G-J3KTMCE28B"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
