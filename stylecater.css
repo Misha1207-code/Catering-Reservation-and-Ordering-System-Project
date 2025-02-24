@@ -1,0 +1,53 @@
+body {
+    font-family: 'Aptos Display', 'Helvetica', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#products, #orders, #admin-panel {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card, .order-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 30px;
+    background: #333;
+    color: white;
+    padding: 15px;
+}

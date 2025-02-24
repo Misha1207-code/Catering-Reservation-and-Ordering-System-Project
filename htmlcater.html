@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Reservation</title>
+    <link rel="stylesheet" href="stylecater.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catering Reservation</h1>
+        <nav>
+            <input type="text" id="search" placeholder="Search catering...">
+            <button onclick="searchProducts()">🔍</button>
+            <a href="#" onclick="viewWishlist()">❤️ Wishlist</a>
+            <a href="#" onclick="viewCart()">🛒 Cart (<span id="cart-count">0</span>)</a>
+            <a href="#" onclick="viewProfile()">👤 Profile</a>
+            <a href="#" onclick="viewOrders()">📦 Orders</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <div id="auth">
+        <h2>Login / Register</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <section id="products">
+        <h2>Available Catering Services</h2>
+        <div id="product-list"></div>
+    </section>
+
+    <section id="orders">
+        <h2>Your Orders</h2>
+        <div id="order-list"></div>
+    </section>
+
+    <section id="admin-panel">
+        <h2>Admin Panel - Manage Orders</h2>
+        <div id="admin-orders"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Catering Reservation. All rights reserved.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+    <script src="jscriptcater.js"></script>
+
+</body>
+</html>
